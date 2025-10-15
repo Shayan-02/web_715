@@ -1,0 +1,19 @@
+p {
+    font-size: 20px;
+}
+
+.imp{
+    font-weight: bold;
+}
+
+#p1{
+    color: red;
+}
+
+#p2{
+    color: rgb(89, 0, 255);
+}
+
+.p2{
+    background-color: darkgrey;
+}

@@ -1,0 +1,40 @@
+/* @font-face {
+    font-family: vazir;
+    src:url("./../fonts/Vazir.eot"),
+        url("./../fonts/Vazir.ttf"),
+        url("./../fonts/Vazir.woff"),
+        url("./../fonts/Vazir.woff2");
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Noto+Sans+Arabic:wght@100..900&family=Vazirmatn:wght@100..900&display=swap');
+
+*{
+    font-family: Vazirmatn;
+    font-weight: bold;
+}
+
+body{
+    background-color: aqua;
+}
+
+.buy {
+    list-style: none;
+}
+
+h1{
+    background-color: rgba(255, 0, 0, 0.4);
+    display: inline-block;
+    padding: 0 20px;
+    margin: 50px;
+}
+
+img{
+    background: blue;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

@@ -1,0 +1,151 @@
+{
+  "name": "دوره جاوااسکریپت پیشرفته - CMS نهایی",
+  "labels": [
+    { "name": "Front-End", "color": "green" },
+    { "name": "Back-End", "color": "blue" },
+    { "name": "تمرین", "color": "yellow" },
+    { "name": "پروژه", "color": "red" }
+  ],
+  "lists": [
+    {
+      "name": "Pre-recorded (فاز ۱)",
+      "cards": [
+        {
+          "name": "فیلم ۱: مرور توابع و Scope",
+          "desc": "مباحث:\n- Scope و Hoisting\n- Closure\n- Arrow Function\nتمرین:\n- تمرین Closure و بازگشت داده از تابع",
+          "labels": ["Front-End", "تمرین"]
+        },
+        {
+          "name": "فیلم ۲: DOM و BOM پایه",
+          "desc": "مباحث:\n- DOM و انتخاب عناصر\n- BOM و window\n- Event Listener ساده\nتمرین:\n- تمرین تغییر محتوا و استایل با DOM",
+          "labels": ["Front-End", "تمرین"]
+        },
+        {
+          "name": "فیلم ۳: Event Handling و Delegation",
+          "desc": "مباحث:\n- Event Bubbling / Capturing\n- Delegation\n- Keyboard و Mouse Events\nتمرین:\n- تمرین فرم ساده با Event Listener",
+          "labels": ["Front-End", "تمرین"]
+        }
+      ]
+    },
+    {
+      "name": "فاز ۲: OOP و ماژول‌ها",
+      "cards": [
+        {
+          "name": "جلسه ۱: Object و Prototype",
+          "desc": "مباحث:\n- Object و Property\n- Prototype و Prototype Chain\nتمرین:\n- پیاده‌سازی کلاس ساده User با روش Prototype",
+          "labels": ["Front-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۲: کلاس‌ها و ارث‌بری",
+          "desc": "مباحث:\n- Class و Inheritance\n- Super و روش‌های دسترسی به والد\nتمرین:\n- ساخت چند کلاس مرتبط با پست‌ها",
+          "labels": ["Front-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۳: ماژول‌ها و ساختار پروژه",
+          "desc": "مباحث:\n- Import / Export در ES6\n- تقسیم پروژه به چند فایل\nتمرین:\n- جدا کردن کلاس‌ها و توابع به فایل‌های مختلف",
+          "labels": ["Front-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۴: پروژه تمرینی PostManager",
+          "desc": "مباحث:\n- مدیریت پست‌ها با کلاس\n- افزودن، حذف و ویرایش پست‌ها\nتمرین:\n- ساخت پروژه کوچک مدیریت پست‌ها با LocalStorage",
+          "labels": ["Front-End", "تمرین", "پروژه"]
+        }
+      ]
+    },
+    {
+      "name": "فاز ۳: Async و Mini CMS با Mock API",
+      "cards": [
+        {
+          "name": "جلسه ۵: Promise و Event Loop",
+          "desc": "مباحث:\n- مفهوم Async و Event Loop\n- Promise و Chain کردن\nتمرین:\n- تمرین Promise Chain برای داده‌های نمونه",
+          "labels": ["Front-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۶: async/await و مدیریت خطا",
+          "desc": "مباحث:\n- async/await\n- try/catch در async functions\nتمرین:\n- بازنویسی تمرین Promise با async/await",
+          "labels": ["Front-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۷: Fetch API و JSON Server",
+          "desc": "مباحث:\n- Fetch API\n- کار با Mock API (json-server)\nتمرین:\n- خواندن و نوشتن داده‌ها از/به Mock API",
+          "labels": ["Front-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۸: Mini CMS با Fetch API",
+          "desc": "مباحث:\n- CRUD با Fetch\n- مدیریت خطا و پیغام‌ها\nتمرین:\n- ساخت Mini CMS با Mock API",
+          "labels": ["Front-End", "تمرین", "پروژه"]
+        }
+      ]
+    },
+    {
+      "name": "فاز ۴: Node.js و دیتابیس",
+      "cards": [
+        {
+          "name": "جلسه ۹: ورود به Node.js و NPM",
+          "desc": "مباحث:\n- نصب Node.js\n- npm و ماژول‌ها\n- ساخت سرور ساده HTTP\nتمرین:\n- ساخت سرور ساده که Hello World نمایش دهد",
+          "labels": ["Back-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۱۰: Express و Routes",
+          "desc": "مباحث:\n- معرفی Express\n- ساخت مسیرهای GET و POST\n- Middleware ساده\nتمرین:\n- ایجاد مسیرهای CRUD برای پست‌ها",
+          "labels": ["Back-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۱۱: ارتباط با دیتابیس",
+          "desc": "مباحث:\n- MongoDB یا SQLite\n- مدل داده Post\n- عملیات CRUD روی دیتابیس\nتمرین:\n- ذخیره و واکشی پست‌ها در دیتابیس واقعی",
+          "labels": ["Back-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۱۲: پروژه CMS با Node و دیتابیس",
+          "desc": "مباحث:\n- اتصال Front-End به Back-End\n- تست CRUD کامل\nتمرین:\n- ساخت پروژه کامل CMS مرحله‌ای با دیتابیس",
+          "labels": ["Back-End", "تمرین", "پروژه"]
+        }
+      ]
+    },
+    {
+      "name": "فاز ۵: احراز هویت و پروژه نهایی CMS",
+      "cards": [
+        {
+          "name": "جلسه ۱۳: احراز هویت ساده",
+          "desc": "مباحث:\n- Login / Logout\n- Hash کردن رمز با bcrypt\nتمرین:\n- فرم ورود ساده برای مدیر",
+          "labels": ["Back-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۱۴: حفاظت مسیرها (Protected Routes)",
+          "desc": "مباحث:\n- JWT یا Session\n- محدود کردن دسترسی به مسیرها\nتمرین:\n- محافظت مسیرهای مدیریتی در CMS",
+          "labels": ["Back-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۱۵: اتصال Front-End به Back-End نهایی",
+          "desc": "مباحث:\n- Fetch API به مسیرهای Back-End\n- مدیریت پاسخ و خطا\nتمرین:\n- اتصال کامل فرم‌ها و لیست‌ها به API",
+          "labels": ["Front-End", "Back-End", "تمرین"]
+        },
+        {
+          "name": "جلسه ۱۶: افزودن، ویرایش و حذف پست‌ها",
+          "desc": "مباحث:\n- CRUD کامل با قابلیت جستجو و فیلتر\nتمرین:\n- پیاده‌سازی کامل مدیریت پست‌ها و فیلتر/جستجو",
+          "labels": ["Front-End", "Back-End", "تمرین", "پروژه"]
+        },
+        {
+          "name": "جلسه ۱۷: نمایش پست‌ها برای کاربران",
+          "desc": "مباحث:\n- نمایش صفحات عمومی پست‌ها\n- مرتب‌سازی بر اساس تاریخ\nتمرین:\n- نمایش لیست پست‌ها و جزئیات",
+          "labels": ["Front-End", "تمرین", "پروژه"]
+        },
+        {
+          "name": "جلسه ۱۸: طراحی UI و افزودن تصویر",
+          "desc": "مباحث:\n- UI پیشرفته و واکنش‌گرا\n- آپلود تصویر برای هر پست\nتمرین:\n- طراحی داشبورد و فرم افزودن تصویر",
+          "labels": ["Front-End", "تمرین", "پروژه"]
+        },
+        {
+          "name": "جلسه ۱۹: Logging و Debugging",
+          "desc": "مباحث:\n- ثبت تغییرات و خطاها\n- رفع باگ و مستندسازی\nتمرین:\n- بررسی کامل پروژه و رفع اشکال",
+          "labels": ["Back-End", "تمرین", "پروژه"]
+        },
+        {
+          "name": "جلسه ۲۰: تحویل پروژه و جمع‌بندی",
+          "desc": "مباحث:\n- ارائه پروژه CMS نهایی\n- جمع‌بندی مباحث و Q&A\nتمرین:\n- ارائه پروژه و دریافت بازخورد",
+          "labels": ["Front-End", "Back-End", "پروژه"]
+        }
+      ]
+    }
+  ]
+}
