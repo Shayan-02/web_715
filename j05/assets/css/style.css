@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#apple{
+    font-size: 40px;
+    color: rgb(255, 107, 107);
+}

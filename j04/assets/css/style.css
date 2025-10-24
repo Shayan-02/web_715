@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Vazir;
+    src: url(./../../../j03/assets/fonts/Vazir.eot),
+         url(./../../../j03/assets/fonts/Vazir.ttf),
+         url(./../../../j03/assets/fonts/Vazir.woff),
+         url(./../../../j03/assets/fonts/Vazir.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Vazir;
+}
+
+img{
+    width: 250px;
+    height: 200px;
+}
+
+#i1{
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+
+#i2{
+    /* margin: 120px 50px 100px 70px; */
+    /* margin: 120px 50px; */
+    margin: 100px;
+}
+
+#google-btn{
+    text-decoration: none;
+    color: black;
+    background-color: #3eff4e;
+    font-weight: 800;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 20px 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
