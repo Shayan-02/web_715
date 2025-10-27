@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Noto+Sans+Arabic:wght@100..900&family=Vazirmatn:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Vazirmatn;
+}
+
+.container{
+    text-align: center;
+    height: 70px;
+    border-bottom: 1px solid #333;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.item{
+    display: inline-block;
+    margin: 20px;
+}
+
+.item-link{
+    color: #333;
+    font-size: 1rem;
+
+}
+
+.item-link:hover{
+    font-weight: 700;
+}
+
+#div1{
+    background-color: #333;
+}
+
+#inp{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#inp::placeholder{
+    color: aquamarine;
+}
