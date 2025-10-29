@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: darkgrey;
+    height: 500px;
+}
+
+.item{
+    width: 100px;
+    /* height: 100px; */
+    /* margin-left: 10px; */
+}
+
+.item1{
+    background-color: cadetblue;
+}
+.item2{
+    background-color: chocolate;
+}
+.item3{
+    background-color: crimson;
+}
+.item4{
+    background-color: hotpink;
+}
+.item5{
+    background-color: indigo;
+}
+.item6{
+    background-color: forestgreen;
+}
+.item7{
+    background-color: indianred;
+}
+.item8{
+    background-color: darkorange;
+}
+.item9{
+    background-color: grey;
+}
+.item10{
+    background-color: darksalmon;
+}
