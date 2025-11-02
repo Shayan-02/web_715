@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Noto+Sans+Arabic:wght@100..900&family=Vazirmatn:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Vazirmatn;
+}
+
+.body{
+    background-color: rgba(14, 16, 25, 1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background-color: rgba(34, 36, 47, 1);
+    height: 200px;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.modal h2{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.modal p{
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0 15px;
+    text-align: center;
+}
+
+.input-group{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.input-group input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    direction: ltr;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.input-group button{
+    background-color: #3d518f;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}

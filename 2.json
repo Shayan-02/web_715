@@ -1,0 +1,129 @@
+{
+  "name": "JavaScript CMS Course",
+  "lists": [
+    {
+      "name": "Sessions",
+      "cards": [
+        {
+          "name": "Session 1 – Introduction & Environment Setup",
+          "desc": "Course objectives and roadmap\nReviewing JavaScript fundamentals (functions, loops, DOM, events)\nSetting up environment: Node.js, VS Code, and NPM\nFolder structure and project organization\n📘 Exercise: Create project skeleton and initialize package.json"
+        },
+        {
+          "name": "Session 2 – Advanced DOM Manipulation & Events",
+          "desc": "Event handling best practices (bubbling, capturing, delegation)\nWorking with dynamic elements and dataset attributes\nEfficient DOM updates\n📘 Mini Project: Dynamic To-Do List\n💡 CMS Connection: Similar logic used for adding/editing articles."
+        },
+        {
+          "name": "Session 3 – Modular Programming with ES6 Modules",
+          "desc": "Import/export syntax\nStructuring code for reusability\nUtility and DOM helper modules\n📘 Exercise: Refactor To-Do List using ES Modules"
+        },
+        {
+          "name": "Session 4 – Browser Storage Essentials",
+          "desc": "LocalStorage, SessionStorage, and Cookies\nWorking with JSON objects in storage\nCRUD operations on LocalStorage\n📘 Mini Project: Note Manager App\n💡 CMS Connection: Saving user preferences or draft articles."
+        },
+        {
+          "name": "Session 5 – Introduction to IndexedDB (Part 1)",
+          "desc": "Understanding IndexedDB structure: database, object store, transactions\nCreating and opening a database\nAdding records\n📘 Exercise: Store and retrieve article data from IndexedDB."
+        },
+        {
+          "name": "Session 6 – IndexedDB (Part 2)",
+          "desc": "CRUD operations: getAll, put, delete\nPromises and async database handling\nDisplaying stored data dynamically\n📘 Mini Project: Article Manager with IndexedDB."
+        },
+        {
+          "name": "Session 7 – Asynchronous JavaScript Deep Dive",
+          "desc": "Callbacks, Promises, and async/await explained\nError handling with try/catch\nChaining asynchronous tasks\n📘 Exercise: Simulate data loading and display loading indicators."
+        },
+        {
+          "name": "Session 8 – Working with APIs (Part 1)",
+          "desc": "Fetch API basics (GET and POST methods)\nJSON parsing and response handling\nIntroduction to REST concepts\n📘 Exercise: Fetch data from JSONPlaceholder API.\n💡 CMS Connection: Fetch and display articles."
+        },
+        {
+          "name": "Session 9 – Working with APIs (Part 2)",
+          "desc": "PUT and DELETE requests\nNetwork error handling\nBuilding reusable Fetch functions\n📘 Mini Project: User Management Table with API integration."
+        },
+        {
+          "name": "Session 10 – Using Axios and Form Validation",
+          "desc": "Installing and using Axios for HTTP requests\nComparing Axios vs. Fetch\nImplementing form validation with Validator.js\n📘 Exercise: Registration Form with validation and API submission.\n💡 CMS Connection: Add article form with validation."
+        },
+        {
+          "name": "Session 11 – Combining Storage & API (Offline-First)",
+          "desc": "Integrating LocalStorage, IndexedDB, and APIs\nDetecting online/offline status (navigator.onLine)\nSynchronizing data after reconnection\n📘 Exercise: Save data offline and sync automatically when online."
+        },
+        {
+          "name": "Session 12 – Authentication and Session Management",
+          "desc": "Building a simple login system\nSaving user session with LocalStorage\nConditional page rendering for logged-in users\n📘 Exercise: Login App with session persistence.\n💡 CMS Connection: Admin login and restricted dashboard."
+        },
+        {
+          "name": "Session 13 – Performance Optimization",
+          "desc": "Event delegation\nDebounce and Throttle patterns\nReducing reflows and repaints\n📘 Exercise: Implement a search input with debounce.\n💡 CMS Connection: Search/filter articles efficiently."
+        },
+        {
+          "name": "Session 14 – NPM Tools & Automation",
+          "desc": "Working with package.json and npm scripts\nUsing linters and formatters (ESLint, Prettier)\nBrief intro to build tools (Parcel, Babel)\n📘 Exercise: Configure a build and run script for CMS project."
+        },
+        {
+          "name": "Session 15 – Final Project: CMS Integration",
+          "desc": "Building a fully functional CMS (CRUD, search, filters)\nCombining API + IndexedDB for offline support\nUI/UX improvements and final testing\n📘 Final Project: Deliver and document a complete JavaScript CMS."
+        }
+      ]
+    },
+    {
+      "name": "Complementary Mini Projects",
+      "cards": [
+        {
+          "name": "To-Do List",
+          "desc": "Focus Area: DOM & Events\nRelated Sessions: 2–3"
+        },
+        {
+          "name": "Note Manager",
+          "desc": "Focus Area: LocalStorage\nRelated Sessions: 4"
+        },
+        {
+          "name": "Article Manager",
+          "desc": "Focus Area: IndexedDB\nRelated Sessions: 5–6"
+        },
+        {
+          "name": "User Table",
+          "desc": "Focus Area: Fetch & Error Handling\nRelated Sessions: 8–9"
+        },
+        {
+          "name": "Login System",
+          "desc": "Focus Area: Validation & Session\nRelated Sessions: 10–12"
+        },
+        {
+          "name": "Final CMS",
+          "desc": "Focus Area: Integration Project\nRelated Sessions: 13–15"
+        }
+      ]
+    },
+    {
+      "name": "Skills Gained",
+      "cards": [
+        {
+          "name": "Technical (Hard Skills)",
+          "desc": "ES6+, DOM, Async/Await, Fetch/Axios, IndexedDB, NPM, API integration, Validation, Offline-first apps"
+        },
+        {
+          "name": "Professional (Soft Skills)",
+          "desc": "Code organization, debugging, problem-solving, clean code practices, real-world application design"
+        }
+      ]
+    },
+    {
+      "name": "Final Deliverables",
+      "cards": [
+        {
+          "name": "5+ hands-on mini projects"
+        },
+        {
+          "name": "1 complete functional CMS app"
+        },
+        {
+          "name": "Experience using browser APIs, asynchronous operations, and data management"
+        },
+        {
+          "name": "Readiness to build real-world JavaScript applications"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+  display: flex;
+  width: 600px;
+}
+
+.item {
+  padding: 48px;
+  background-color: cyan;
+  border: 1px solid black;
+}
+
+.first{
+    flex-grow: 1;
+}
+
+.second{
+    flex-grow: 2;
+}
+
+.third{
+    flex-shrink: 0.5;
+}
