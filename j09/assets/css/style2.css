@@ -1,0 +1,7 @@
+.top{
+    border-radius: 50%;
+    background-color: #15f1a883;
+    padding: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
