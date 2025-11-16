@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    direction : rtl;
+}
+
+@media screen and (max-width : 800px) or (min-width : 1000px) {
+    body{
+        background-color: cornflowerblue;
+    }
+}
