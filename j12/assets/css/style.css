@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    direction : rtl;
+}
+
+.container {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.item {
+  background-color: cyan;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+/* @media screen and (max-width : 800px) and (min-width : 1000px) {
+    body{
+        background-color: cornflowerblue;
+    }
+} */
