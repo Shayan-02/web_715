@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Before و After</title>
+        <style>
+      @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Vazirmatn", sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      /* پروژه 1: کارت با افکت نئون */
+      .neon-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 2rem;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .neon-card::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff, #06ffa5);
+        border-radius: 20px;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .neon-card:hover::before {
+        opacity: 1;
+        animation: neon-glow 2s infinite alternate;
+      }
+
+      @keyframes neon-glow {
+        0% {
+          filter: blur(5px);
+        }
+        100% {
+          filter: blur(10px);
+        }
+      }
+
+      .neon-card h3 {
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .neon-card p {
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+      }
+
+      /* پروژه 2: دکمه با افکت موج */
+      .wave-button {
+        background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        margin: 1rem;
+      }
+
+      .wave-button::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+      }
+
+      .wave-button:hover::before {
+        width: 300px;
+        height: 300px;
+      }
+
+      .wave-button span {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* پروژه 3: آیکون با افکت پالس */
+      .pulse-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(45deg, #4facfe, #00f2fe);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 2rem auto;
+        cursor: pointer;
+      }
+
+      .pulse-icon::before,
+      .pulse-icon::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: inherit;
+        opacity: 0.7;
+        animation: pulse 2s infinite;
+      }
+
+      .pulse-icon::after {
+        animation-delay: 1s;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 0.7;
+        }
+        100% {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+
+      .pulse-icon i {
+        font-size: 2rem;
+        color: white;
+        z-index: 1;
+      }
+
+      /* پروژه 4: متن با افکت تایپ رایتر */
+      .typewriter {
+        background: rgba(0, 0, 0, 0.8);
+        color: #00ff00;
+        padding: 2rem;
+        border-radius: 10px;
+        font-family: "Courier New", monospace;
+        position: relative;
+        margin: 2rem 0;
+      }
+
+      .typewriter::before {
+        content: "> ";
+        color: #00ff00;
+      }
+
+      .typewriter-text {
+        display: inline-block;
+        position: relative;
+      }
+
+      .typewriter-text::after {
+        content: "|";
+        color: #00ff00;
+        animation: blink 1s infinite;
+        margin-left: 2px;
+      }
+
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 1;
+        }
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      /* پروژه 5: کارت محصول با افکت فلیپ */
+      .flip-card {
+        width: 100%;
+        height: 300px;
+        perspective: 1000px;
+        margin: 1rem 0;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+      }
+
+      .flip-card-front {
+        background: linear-gradient(45deg, #fa709a, #fee140);
+        color: white;
+      }
+
+      .flip-card-back {
+        background: linear-gradient(45deg, #a8edea, #fed6e3);
+        color: #333;
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front::before {
+        content: "🎨";
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      .flip-card-back::before {
+        content: "✨";
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      /* پروژه 6: نوار پیشرفت انیمیشنی */
+      .progress-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        margin: 1rem 0;
+      }
+
+      .progress-bar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #ff9a9e, #fecfef, #fecfef, #ff9a9e);
+        border-radius: 10px;
+        animation: loading 3s infinite;
+      }
+
+      @keyframes loading {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      .progress-bar::after {
+        content: attr(data-progress);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bold;
+        font-size: 0.8rem;
+        z-index: 2;
+      }
+
+      /* پروژه 7: منوی همبرگری انیمیشنی */
+      .hamburger-menu {
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease;
+        margin: 2rem auto;
+      }
+
+      .hamburger-menu:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.1);
+      }
+
+      .hamburger-lines {
+        width: 25px;
+        height: 3px;
+        background: white;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      .hamburger-lines::before,
+      .hamburger-lines::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background: white;
+        transition: all 0.3s ease;
+      }
+
+      .hamburger-lines::before {
+        top: -8px;
+      }
+
+      .hamburger-lines::after {
+        bottom: -8px;
+      }
+
+      .hamburger-menu:hover .hamburger-lines {
+        background: transparent;
+      }
+
+      .hamburger-menu:hover .hamburger-lines::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+
+      .hamburger-menu:hover .hamburger-lines::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+      }
+
+      /* پروژه 8: کارت با افکت شاین */
+      .shine-card {
+        background: linear-gradient(45deg, #2c3e50, #34495e);
+        border-radius: 15px;
+        padding: 2rem;
+        position: relative;
+        overflow: hidden;
+        color: white;
+        cursor: pointer;
+      }
+
+      .shine-card::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          45deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        transform: rotate(45deg);
+        transition: all 0.5s;
+        opacity: 0;
+      }
+
+      .shine-card:hover::before {
+        animation: shine 0.8s ease-in-out;
+      }
+
+      @keyframes shine {
+        0% {
+          transform: translateX(-100%) translateY(-100%) rotate(45deg);
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(100%) translateY(100%) rotate(45deg);
+          opacity: 0;
+        }
+      }
+
+      .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+
+      .demo-text {
+        color: white;
+        text-align: center;
+        margin: 1rem 0;
+        font-size: 1.1rem;
+      }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>پروژه‌های جذاب با CSS Before & After</h1>
+            <div class="projects-grid">
+                <!-- پروژه 1: کارت نئون -->
+                <div class="neon-card">
+                    <h3>کارت با افکت نئون</h3>
+                    <p>
+                        این کارت با استفاده از ::before یک حاشیه نئونی زیبا ایجاد می‌کند که
+            هنگام hover فعال می‌شود.
+                    </p>
+                </div>
+                <!-- پروژه 2: آیکون پالس -->
+                <div class="neon-card">
+                    <h3>آیکون با افکت پالس</h3>
+                    <div class="pulse-icon">
+                        <i>💎</i>
+                    </div>
+                    <p>
+                        با استفاده از ::before و ::after دو حلقه انیمیشنی ایجاد شده که افکت
+            پالس می‌دهند.
+                    </p>
+                </div>
+                <!-- پروژه 3: کارت فلیپ -->
+                <div class="neon-card">
+                    <h3>کارت فلیپ سه‌بعدی</h3>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>جلوی کارت</h4>
+                                <p>روی من hover کن!</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h4>پشت کارت</h4>
+                                <p>افکت فلیپ با ::before برای آیکون‌ها!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- پروژه 4: کارت  -->
+                <div class="shine-card">
+                    <h3>کارت با افکت</h3>
+                    <p>
+                        هنگام hover یک نور درخشان از روی کارت عبور می‌کند. این افکت با
+            ::before ساخته شده است.
+                    </p>
+                </div>
+            </div>
+            <!-- دکمه‌های موجی -->
+            <div class="buttons-container">
+                <button class="wave-button">
+                    <span>دکمه با افکت موج</span>
+                </button>
+                <button class="wave-button">
+                    <span>کلیک کن!</span>
+                </button>
+            </div>
+            <!-- متن تایپ رایتر -->
+            <div class="typewriter">
+                <span class="typewriter-text">سلام! من یک متن تایپ رایتر هستم...</span>
+            </div>
+            <!-- نوار پیشرفت -->
+            <div class="progress-container">
+                <h3 style="color: white; margin-bottom: 1rem">نوار پیشرفت انیمیشنی</h3>
+                <div class="progress-bar" data-progress="در حال بارگذاری..."></div>
+                <p style="color: rgba(255, 255, 255, 0.8)">
+                    این نوار با ::before یک انیمیشن بارگذاری ایجاد می‌کند.
+                </p>
+            </div>
+            <!-- منوی همبرگری -->
+            <div class="demo-text">منوی همبرگری انیمیشنی (hover کن!)</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-lines"></div>
+            </div>
+        </div>
+    </body>
+</html>
